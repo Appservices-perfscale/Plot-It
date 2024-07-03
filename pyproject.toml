@@ -1,0 +1,24 @@
+[project]
+name = "plot-it"
+version = "0.0.1"
+authors = [
+  { name="Rahul Shetty", email="rashetty@redhat.com" },
+]
+description = "Manage and visualize plots in declarative manner."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
+plot_it = "plot_it.cli:cli"

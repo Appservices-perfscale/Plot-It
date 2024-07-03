@@ -1,0 +1,37 @@
+# Path to input directory containing data source
+input:
+  paths:
+  - ./weather_data.csv
+
+# Path to output directory to save generated charts
+output:
+  dir: ./results/
+  overwrite: true
+
+# Chart definitions
+charts:
+- type: timeseries # Type timeseries: X axis is timestamps and Y axis is data points
+  name: Weather Data Example # Chart Title
+  show_events: true # Show events for specific chart
+  data: # Data file names to be considered for plotting
+  - weather_data
+  xaxis:
+    name: Timestamp # Title of the given Axis
+    formatter: time_hour  # Formatter time_hour: This formatter loads timestamp values in HH:mm format
+    data: timestamp  # data: Column name in the data files to represents this axis
+  yaxis:
+    name: Value
+    data: "%" # % Shortcut: Consider all the columns except the xaxis column name while representing this data points.
+
+- type: timeseries # Type timeseries: X axis is timestamps and Y axis is data points
+  name: Weather Humidity # Chart Title
+  show_events: true # Show events for specific chart
+  data: # Data file names to be considered for plotting
+  - weather_data
+  xaxis:
+    name: Timestamp # Title of the given Axis
+    formatter: time_hour  # Formatter time_hour: This formatter loads timestamp values in HH:mm format
+    data: timestamp  # data: Column name in the data files to represents this axis
+  yaxis:
+    name: Humidity
+    data: "humidity"
