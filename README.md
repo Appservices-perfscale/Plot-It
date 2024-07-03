@@ -22,7 +22,7 @@ Following capabilities are in development/roadmap:
 ## Installation
 
 ```
-$ pip install git+https://https://github.com/Appservices-perfscale/Plot-It.git
+$ pip install git+https://github.com/Appservices-perfscale/Plot-It.git
 
 $ plot_it --help
 Usage: plot_it [OPTIONS] COMMAND [ARGS]...
