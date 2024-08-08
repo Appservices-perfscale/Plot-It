@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: plot-it
+  title: Plot It
+  description: CLI-based utility to automate data visualization through simple YAML definitions.
+  namespace: perfscale
+  annotations:
+    jira/project-key: PSINFRA-73
+  tags:
+    - python
+    - cli
+  links:
+  - title: About Project
+    url: https://docs.google.com/document/d/18MDV6Ma-ffTcR1xIxeDL6P8f3Fk8VCv4-1OfphI3Dwg/edit?usp=sharing
+    icon: docs
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:redhat/rashetty
