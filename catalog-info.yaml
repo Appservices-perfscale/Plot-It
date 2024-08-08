@@ -16,6 +16,7 @@ metadata:
     icon: docs
 spec:
   type: service
+  domain: perf-scale/perf-scale-engineering
   system: perf-scale/tools
   lifecycle: experimental
   owner: user:redhat/rashetty
