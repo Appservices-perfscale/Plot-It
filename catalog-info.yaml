@@ -6,7 +6,8 @@ metadata:
   description: CLI-based utility to automate data visualization through simple YAML definitions.
   namespace: perf-scale
   annotations:
-    jira/project-key: PSINFRA-73
+    jira/project-key: PSINFRA
+    jira.com/filter-ids: 73
   tags:
     - python
     - cli
