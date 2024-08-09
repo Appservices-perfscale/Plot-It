@@ -7,7 +7,7 @@ metadata:
   namespace: perf-scale
   annotations:
     jira/project-key: PSINFRA
-    jira.com/filter-ids: 73
+    jira.com/filter-ids: "73"
   tags:
     - python
     - cli
