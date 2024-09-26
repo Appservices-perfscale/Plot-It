@@ -4,7 +4,7 @@ metadata:
   name: plot-it
   title: Plot It
   description: CLI-based utility to automate data visualization through simple YAML definitions.
-  namespace: perf-scale
+  namespace: perfscale
   annotations:
     jira/project-key: PSINFRA
     jira/filter-ids: "73"
@@ -17,7 +17,7 @@ metadata:
     icon: docs
 spec:
   type: service
-  domain: perf-scale/perf-scale-engineering
-  system: perf-scale/tools
+  domain: perfscale/perf-dept
+  system: perfscale/consoledot-testing
   lifecycle: experimental
   owner: user:redhat/rashetty
