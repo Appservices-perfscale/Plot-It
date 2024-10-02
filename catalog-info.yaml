@@ -18,6 +18,6 @@ metadata:
 spec:
   type: service
   domain: perfscale/perf-dept
-  system: perfscale/consoledot-testing
+  system: perfscale/research
   lifecycle: experimental
   owner: user:redhat/rashetty
